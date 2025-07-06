@@ -1,49 +1,8 @@
 import React from "react";
 import "./PostCard.css";
 
-const PostCard = () => {
-  const blogPosts = [
-    {
-      title: "Mastering React in 30 Days",
-      about:
-        "Learn how to build modern web apps using React with hands-on projects and real-world examples.",
-      hashtags: ["React", "JavaScript", "WebDevelopment"],
-      likes: 120,
-      authorName: "Charan",
-    },
-    {
-      title: "10 Productivity Hacks for Developers",
-      about:
-        "Simple tips and tools to help developers stay focused, write clean code, and manage time effectively.",
-      hashtags: ["Productivity", "Coding", "LifeHacks"],
-      likes: 87,
-      authorName: "Aarav",
-    },
-    {
-      title: "Understanding Tailwind CSS",
-      about:
-        "A complete beginner’s guide to using Tailwind CSS for designing beautiful and responsive UIs.",
-      hashtags: ["Tailwind", "CSS", "Frontend"],
-      likes: 64,
-      authorName: "Megha",
-    },
-    {
-      title: "Demystifying APIs: A Beginner’s Guide",
-      about:
-        "Learn what APIs are, how they work, and how to use them in your web projects with simple examples.",
-      hashtags: ["API", "Backend", "WebDev"],
-      likes: 42,
-      authorName: "Rohan",
-    },
-    {
-      title: "Getting Started with FastAPI",
-      about:
-        "Build lightning-fast APIs in Python using FastAPI, with step-by-step examples and best practices.",
-      hashtags: ["FastAPI", "Python", "Backend"],
-      likes: 93,
-      authorName: "Charan",
-    },
-  ];
+const PostCard = ({blogPosts}) => {
+  
   return (
     <div className="container-fluid">
       <div className="row g-4">
